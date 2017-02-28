@@ -1,14 +1,14 @@
 {
   "name": "mustang-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
-  "description": "Port for atom from original mustang colorscheme by hcalves",
+  "version": "0.0.1",
+  "description": "Syntax based on the mustang colorscheme by hcalves",
   "keywords": [
     "syntax",
     "theme",
     "mustang"
   ],
-  "repository": "https://github.com/atom/mustang-syntax",
+  "repository": "https://github.com/Piplopp/e.caballus-syntax-atom",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
