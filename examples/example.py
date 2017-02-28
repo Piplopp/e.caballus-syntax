@@ -1,3 +1,6 @@
+# This python code example is from the MagicStack/MagikPython repository
+# Just added a few dummy things for testing purposes
+
 import asyncio
 from foo import bar as baz
 
