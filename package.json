@@ -1,0 +1,16 @@
+{
+  "name": "mustang-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Port for atom from original mustang colorscheme by hcalves",
+  "keywords": [
+    "syntax",
+    "theme",
+    "mustang"
+  ],
+  "repository": "https://github.com/atom/mustang-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
