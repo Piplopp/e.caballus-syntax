@@ -35,270 +35,284 @@ atom-text-editor {
   .gutter .line-number.folded,
   .gutter .line-number:after,
   .fold-marker:after {
-    color: @light-gray;
+    color: black; // changed
   }
 
   .invisible {
-    color: @syntax-text-color;
+    color: @syntax-text-color; // changed
   }
 
   .cursor {
-    color: @syntax-cursor-color;
+    color: @syntax-cursor-color; // changed
   }
 
   .selection .region {
-    background-color: @syntax-selection-color;
+    background-color: @syntax-selection-color; // changed
   }
 }
 
 atom-text-editor .search-results .marker .region {
   background-color: transparent;
-  border: 1px solid @syntax-result-marker-color;
+  border: 1px solid @syntax-result-marker-color; // changed
 }
 
 atom-text-editor .search-results .marker.current-result .region {
-  border: 1px solid @syntax-result-marker-color-selected;
+  border: 1px solid @syntax-result-marker-color-selected; // default OK
 }
 
 
 // Syntax styles
 
 .syntax--comment {
-  color: @light-gray;
+  color: @light-gray; // changed
+  font-style: italic;
 }
 
 .syntax--keyword {
-  color: @purple;
+  color: @green; // changed from purple
+  font-weight: bold;
 
   &.syntax--control {
-    color: @purple;
+    color: @medium-orange; // changed from purple
+    font-weight: normal;
   }
 
   &.syntax--operator {
-    color: @syntax-text-color;
+    color: @syntax-text-color; // default OK
+    font-weight: normal;
   }
 
   &.syntax--other.syntax--special-method {
-    color: @blue;
+    color: @ultra-pink; // 404 not found was blue
+    font-weight: normal;
   }
 
   &.syntax--other.syntax--unit {
-    color: @orange;
+    color: @ultra-pink; // 404 not found was orange
+    font-weight: normal;
   }
 }
 
-.syntax--storage {
-  color: @purple;
+.syntax--storage { // functions; classes etc.
+  color: @blue; // changed from purple
 }
 
 .syntax--constant {
-  color: @orange;
+  color: @orange; // default OK
 
   &.syntax--character.syntax--escape {
-    color: @cyan;
+    color: @cyan; // default OK
   }
 
   &.syntax--numeric {
-    color: @orange;
+    color: @dark-pink; // changed from orange
   }
 
   &.syntax--other.syntax--color {
-    color: @cyan;
+    color: @ultra-pink; // 404 not found was cyan
   }
 
   &.syntax--other.syntax--symbol {
-    color: @green;
+    color: @ultra-pink; // 404 not found was green
   }
 }
 
 .syntax--variable {
-  color: @red;
+  color: @red; // default OK
 
   &.syntax--interpolation {
-    color: darken(@red, 10%);
+    color: @ultra-pink; // 404 not found was darken red 10%
   }
 
   &.syntax--parameter.syntax--function {
-    color: @syntax-text-color;
+    color: @syntax-text-color; // default OK
   }
 }
 
 .syntax--invalid.syntax--illegal {
-  background-color: @red;
-  color: @syntax-background-color;
+  background-color: @red; // default OK
+  color: @syntax-background-color; // default OK
+  text-decoration: underline; // added
+  text-decoration-color: @flashy-red; // added
 }
 
 .syntax--string {
-  color: @green;
+  color: @green; // default OK
 
 
   &.syntax--regexp {
-    color: @cyan;
+    color: @cyan; // default OK
 
     .syntax--source.syntax--ruby.syntax--embedded {
-      color: @orange;
+      color: @ultra-pink; // 404 not found was orange
     }
   }
 
   &.syntax--other.syntax--link {
-    color: @red;
+    color: @dark-purple; // changed from red
+    text-decoration: underline; // added
+    text-decoration-color: @dark-purple; // added
   }
 }
 
 .syntax--punctuation {
   &.syntax--definition {
     &.syntax--comment {
-      color: @light-gray;
+      color: @light-gray; // default OK
+      font-style: italic; // added
     }
 
     &.syntax--string,
     &.syntax--variable,
     &.syntax--parameters,
     &.syntax--array {
-      color: @syntax-text-color;
+      color: @syntax-text-color; // default OK
     }
 
     &.syntax--heading,
     &.syntax--identity {
-      color: @blue;
+      color: @blue; // default OK
     }
 
     &.syntax--bold {
-      color: @light-orange;
+      color: @light-orange; // default OK
       font-weight: bold;
     }
 
     &.syntax--italic {
-      color: @purple;
+      color: @purple; // default OK
       font-style: italic;
     }
   }
 
   &.syntax--section.syntax--embedded {
-    color: darken(@red, 10%);
+    color: darken(@red, 10%); // default OK
   }
 
 }
 
 .syntax--support {
   &.syntax--class {
-    color: @light-orange;
+    color: @medium-orange; // changed from light-orange
   }
 
   &.syntax--function  {
-    color: @cyan;
+    color: @blue; // changed from cyan
 
     &.syntax--any-method {
-      color: @blue;
+      color: @ultra-pink; // 404 not found was blue
     }
   }
 }
 
 .syntax--entity {
   &.syntax--name.syntax--function {
-    color: @blue;
+    color: @blue; // default OK
   }
   &.syntax--name.syntax--type {
-    color: @light-orange;
+    color: @ultra-pink; // changed from light-orange
     text-decoration: underline;
   }
 
   &.syntax--other.syntax--inherited-class {
-    color: @green;
+    color: @medium-orange; // changed from green
+    text-decoration: underline; // added
   }
   &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
-    color: @light-orange;
+    color: @blue; // changed from light-orange
+    font-weight: bold; // added
   }
 
   &.syntax--name.syntax--section {
-    color: @blue;
+    color: @ultra-pink; // 404 not found was blue
   }
 
   &.syntax--name.syntax--tag {
-    color: @red;
-    text-decoration: underline;
+    color: @red; // default OK
   }
 
   &.syntax--other.syntax--attribute-name {
-    color: @orange;
+    color: @orange; // default OK
 
     &.syntax--id {
-      color: @blue;
+      color: @ultra-pink; // 404 not found was blue
     }
   }
 }
 
 .syntax--meta {
   &.syntax--class {
-    color: @light-orange;
+    color: @syntax-text-color; // changed from light-orange
   }
 
   &.syntax--link {
-    color: @orange;
+    color: @ultra-pink; // 404 not found was orange
   }
 
   &.syntax--require {
-    color: @blue;
+    color: @blue; // default OK
   }
 
   &.syntax--selector {
-    color: @purple;
+    color: @orange; // changed from purple
   }
 
   &.syntax--separator {
-    background-color: @gray;
-    color: @syntax-text-color;
+    background-color: @ultra-pink; // changed from gray
+    color: @syntax-text-color; // default OK
   }
 }
 
 .syntax--none {
-  color: @syntax-text-color;
+  color: @syntax-text-color; // default OK
 }
 
 .syntax--markup {
   &.syntax--bold {
-    color: @orange;
-    font-weight: bold;
+    color: @orange; // default OK
+    font-weight: bold; // default OK
   }
 
   &.syntax--changed {
-    color: @purple;
+    color: @purple; // default OK
   }
 
-  &.syntax--deleted {
-    color: @red;
+  &.syntax--deleted{
+    color: @red; // default OK
+    font-style: italic; // added
   }
 
   &.syntax--italic {
-    color: @purple;
-    font-style: italic;
+    color: @purple; // default OK
+    font-style: italic; // default OK
   }
 
   &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
-    color: @blue;
+    color: @blue; // default OK
   }
 
   &.syntax--inserted {
-    color: @green;
+    color: @green; // default OK
   }
 
   &.syntax--list {
-    color: @red;
+    color: @red; // default OK
   }
 
   &.syntax--quote {
-    color: @orange;
+    color: @light-orange; // changed from orange
+    font-style: italic; // added
   }
 
   &.syntax--raw.syntax--inline {
-    color: @green;
+    color: @green; // default OK
   }
 }
 
 .syntax--source.syntax--gfm .syntax--markup {
   -webkit-font-smoothing: auto;
   &.syntax--heading {
-    color: @green;
+    color: @@ultra-pink; // 404 not found was green
   }
 }
 
