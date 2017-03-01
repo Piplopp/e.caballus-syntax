@@ -8,7 +8,7 @@
     "theme",
     "mustang"
   ],
-  "repository": "https://github.com/Piplopp/e.caballus-syntax-atom",
+  "repository": "https://github.com/Piplopp/e.caballus-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
