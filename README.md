@@ -11,8 +11,8 @@ Manual install only for the moment, just clone the repo in `~/.atom/packages/`
 ## Currently tested for
 
 - [x] Python 3.5+ (with [MagicPython ](https://github.com/MagicStack/MagicPython))
-- [ ] DinoPython
-- [ ] Perl
+- [x] DinoPython
+- [x] Perl
 - [ ] Ruby
 
 ## Warnings
